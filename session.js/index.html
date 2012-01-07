@@ -6,12 +6,10 @@
   <h2>Session.js demo</h2>
   <p>Demo output:</p>
   <pre>
-  
   </pre>
   <script>
     window.session_loaded = function(){
       document.getElementsByTagName('pre')[0].innerHTML = JSON.stringify(session, undefined, 2);
-	  console.log(agent);
     }
     window.session_opts = { enable_location: true, session_days: 5 };
   </script> 
